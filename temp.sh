@@ -4,7 +4,7 @@
 
 while :
 do
-    sensors | grep "Package id 0:  " | awk -F '[+]' '{print $2}' | awk -F '[.]' '{print $1}' >> temp.dat
+    sensors | grep "Tdie:  " | awk -F '[+]' '{print $2}' | awk -F '[.]' '{print $1}' >> temp.dat
     date >> temp.dat
 	sleep 10
     a=`wc -l temp.dat | awk -F '[ ]' '{print $1}'`
