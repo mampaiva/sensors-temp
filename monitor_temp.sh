@@ -5,7 +5,7 @@ INTERVALO=10
 
 # Função para obter a temperatura do processador
 obter_temperatura() {
-    sensors | grep 'Core 0' | awk '{print $3}' | tr -d '+°C'
+    sensors | grep 'Core 0' | awk '{print $3}' | head -n 1 | tr -d '+°C.0'
 }
 
 # Função para gerar um novo arquivo de log diário
