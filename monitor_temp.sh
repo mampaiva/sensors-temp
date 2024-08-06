@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Salvar o PID do processo em um arquivo
+echo $$ > /var/run/monitor_temp_log.pid
+
 # Intervalo de tempo entre cada leitura em segundos
 INTERVALO=10
 
