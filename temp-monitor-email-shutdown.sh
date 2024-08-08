@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Salvar o PID do processo em um arquivo
-echo $$ > /var/run/monitor_temp_log.pid
+echo $$ > /var/run/temp-monitor-email-shutdown.pid
 
 # Intervalo de tempo entre cada leitura em segundos
-INTERVALO=5
+INTERVALO=10
 
 # Endereço de email para notificação
 EMAIL="mts381@gmail.com"
